@@ -10,18 +10,27 @@ There are many existing references on getting started with using Python and codi
     - **Packages** There are many useful existing Python packages, which are searchable [here](https://pypi.org). While there are many, two to go ahead and add include:
         - numpy (for math equations and array computations)
         - matplotlib (for plotting)
+    - **Jupyter Notebooks** Jupyter notebooks are another useful tool to have for code development. These notebooks can provide an interactive environment to prototype and develop code in before writing a fully formed script. Jupyter notebooks can be run through a [web browser](https://www.dataquest.io/blog/jupyter-notebook-tutorial/) or inside the [VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) application. Later examples may be composed of notebooks or from scripts.
 2. **Git** Git is an version control management software that is used to keep track of codes as they undergo development. Additional details are on the [website](https://git-scm.com). You should download git if it is not already on your computer. 
     - Git is traditionally used as commands in the terminal. These are the commands that you will see in the [documentation](https://git-scm.com/doc). A nice walkthrough of basic git commands and using a git repository is available [here](https://antonz.org/git-by-example/). Many IDE's also contain helpful visual methods for using git, which can be more user-friendly for new coders. For example, VS Code has built in git support, with a tutorial available [here](https://code.visualstudio.com/docs/sourcecontrol/overview).
 
+
+## Numerical Methods Skill Development
+As a next step, complete some code to demonstrate your understanding of each of the following concepts. For each of these codes, you should compare your numerical solution with a theoretical solution.
+1. Euler's method
+    
+    See the [euler_method.ipynb](codes/euler_method.ipynb) file for a starter template.
+2. Finite difference method
+    <!-- See the [finite_difference_method.ipynb](codes) -->
+
+Starting points are included in the `codes` folder to give you an idea of where to get started. Additional examples may be added/modified.
 
 ## Toy Problems
 Here we curate a few 'toy problems'. These problems are simpler, with their purpose serving to provide a solvable system to develop your scientific computation skills to be used on future, potentially more complex problems of interest.
 ### 1. Euler-Bernoulli Beam
 The general Euler-Bernoulli beam equation is
 $$
-\begin{equation}
-EI\frac{\partial^4 W(x, t)}{\partial^4 x} + \mu \frac{\partial^2 W(x, t)}{\partial^2 t} = F(x, t)
-\end{equation}
+EI\frac{\partial^4 W(x, t)}{\partial x^4} + \mu \frac{\partial^2 W(x, t)}{\partial t^2} = F(x, t)
 $$
 where $W(x, t)$ is the displacement of the beam at point $x$ and time $t$, and the beam has a constant Young's modulus $E$ and area moment of inertia $I$ and mass per unit length $\mu$. Lastly, the beam is subjected to a force per unit length of $F(x, t)$.
 To practice solving solid mechanics problems, solve for the steady state displacement of a beam with a known static loading scenario. Your numerical solution should be directly comparable with existing theory from statics/deforms textbooks.

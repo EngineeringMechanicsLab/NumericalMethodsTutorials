@@ -21,6 +21,7 @@ As a next step, complete some code to demonstrate your understanding of each of 
     
     See the [1_euler_method.ipynb](codes/1_euler_method.ipynb) file for a starter template.
 2. Finite difference method
+
     See the [2_finite_difference_method_practice.ipynb](codes/2_finite_difference_method_practice.ipynb) file for directions on using the finite difference method to find numerical solutions to ordinary differential equations.
 
 Starting points are included in the `codes` folder to give you an idea of where to get started. Additional examples may be added/modified.
